@@ -1,51 +1,103 @@
+.blog-section {
+  margin: 40px 0;
+}
+
+/* Brand strip (logos row) */
+.brand-strip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.brand-strip img {
+  max-height: 60px;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.brand-strip img:hover {
+  opacity: 1;
+}
+
+/* Blog section */
 .blog {
   background: #fff;
-  padding: 24px 32px;
-  margin: 16px 0;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 0 20px;
 }
-.blog h3 {
-  margin-bottom: 16px;
-  font-size: 1.3rem;
-  color: #333;
+
+.blog-heading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 6px;
+  text-transform: uppercase;
 }
+
 .blog-list {
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
+}
+
+.blog-card {
+  flex: 1;
+  min-width: 240px;
+  max-width: 260px;
+  background: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.06);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.blog-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.blog-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display: block;
+}
+
+.blog-info {
+  padding: 12px;
+}
+
+.blog-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 12px;
+  font-size: 13px;
+  color: #888;
   flex-wrap: wrap;
 }
-.blog-item {
+.blog-meta span {
   display: flex;
   align-items: center;
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 16px;
-  width: 320px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+  gap: 4px;
 }
-.blog-item img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  margin-right: 16px;
-  border-radius: 8px;
-}
-.blog-item h4 {
-  margin: 0 0 8px 0;
-  font-size: 1rem;
-  color: #333;
-}
-.blog-item span {
-  font-size: 0.9rem;
-  color: #888;
-}
+
+/* Responsive */
 @media (max-width: 768px) {
+  .brand-strip {
+    gap: 20px;
+  }
   .blog-list {
     flex-direction: column;
-    gap: 12px;
+    align-items: center;
   }
-  .blog-item {
-    width: 100%;
+  .blog-card {
+    max-width: 100%;
   }
 }
