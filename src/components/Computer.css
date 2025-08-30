@@ -1,0 +1,252 @@
+.computer {
+  background: #fff;
+  padding: 32px 0 0 0;
+  margin: 0 0 24px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.computer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 18px;
+}
+.computer-title {
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-left: 4px solid #ff9800;
+  padding-left: 8px;
+}
+.computer-links {
+  color: #ff9800;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.computer-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 0 40px 32px 40px;
+}
+.computer-card {
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  padding: 24px 18px 18px 18px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.computer-img-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.computer-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+.computer-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e91e63;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.computer-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff9800;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.computer-numbers {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+}
+.computer-number-circle {
+  background: #222;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.computer-info {
+  width: 100%;
+  text-align: left;
+}
+.computer-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+.computer-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.computer-price {
+  color: #ff9800;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.computer-old-price {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+.computer-rating {
+  color: #ff9800;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.computer-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.computer-banner {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  margin: 32px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #f7f7f7;
+}
+.computer-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.computer-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 40px;
+}
+.computer-banner-circle {
+  background: #ffeb3b;
+  color: #ff9800;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  margin-right: 32px;
+}
+.computer-banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.computer-banner-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+.computer-banner-desc {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 12px;
+}
+.computer-banner-btn {
+  background: #ff9800;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 24px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s;
+}
+.computer-banner-btn:hover {
+  background: #e53935;
+}
+@media (max-width: 900px) {
+  .computer-header {
+    padding: 0 8px;
+  }
+  .computer-list {
+    gap: 18px;
+    padding: 0 8px 18px 8px;
+  }
+  .computer-card {
+    width: 100%;
+    padding: 12px 4px 12px 4px;
+  }
+  .computer-img-wrap {
+    width: 80px;
+    height: 80px;
+  }
+  .computer-img {
+    width: 80px;
+    height: 80px;
+  }
+  .computer-banner {
+    height: 120px;
+    padding-left: 8px;
+  }
+  .computer-banner-circle {
+    width: 40px;
+    height: 40px;
+    font-size: 0.9rem;
+    margin-right: 12px;
+  }
+  .computer-banner-title {
+    font-size: 1rem;
+  }
+  .computer-banner-desc {
+    font-size: 0.85rem;
+  }
+  .computer-banner-btn {
+    font-size: 0.85rem;
+    padding: 6px 16px;
+  }
+}

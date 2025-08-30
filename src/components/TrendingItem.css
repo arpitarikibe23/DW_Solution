@@ -1,0 +1,157 @@
+.trending-item {
+  background: #fff;
+  padding: 32px 0 0 0;
+  margin: 0 0 24px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.trending-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  margin-bottom: 18px;
+}
+.trending-title {
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-left: 4px solid #ff9800;
+  padding-left: 8px;
+}
+.trending-links {
+  color: #ff9800;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.trending-list {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding: 0 40px 32px 40px;
+}
+.trending-card {
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 220px;
+  padding: 24px 18px 18px 18px;
+  position: relative;
+  transition: box-shadow 0.2s;
+}
+.trending-img-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+.trending-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #fff;
+}
+.trending-discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e91e63;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.trending-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #ff9800;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.trending-numbers {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  gap: 4px;
+}
+.trending-number-circle {
+  background: #222;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trending-info {
+  width: 100%;
+  text-align: left;
+}
+.trending-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 8px;
+}
+.trending-prices {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.trending-price {
+  color: #ff9800;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.trending-old-price {
+  color: #aaa;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+.trending-rating {
+  color: #ff9800;
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+.trending-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+@media (max-width: 900px) {
+  .trending-header {
+    padding: 0 8px;
+  }
+  .trending-list {
+    gap: 18px;
+    padding: 0 8px 18px 8px;
+  }
+  .trending-card {
+    width: 100%;
+    padding: 12px 4px 12px 4px;
+  }
+  .trending-img-wrap {
+    width: 80px;
+    height: 80px;
+  }
+  .trending-img {
+    width: 80px;
+    height: 80px;
+  }
+}

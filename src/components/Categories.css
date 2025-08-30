@@ -1,0 +1,111 @@
+/* Shop by Categories Section */
+.categories {
+  background: #fff;
+  padding: 32px 40px 0 40px;
+  margin: 24px 0 0 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.categories h3 {
+  margin-bottom: 18px;
+  font-size: 1.2rem;
+  color: #222;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-left: 4px solid #ff9800;
+  padding-left: 8px;
+}
+.categories-list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+.category-item {
+  background: #fafafa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 140px;
+  padding: 18px 0 10px 0;
+  transition: box-shadow 0.2s;
+}
+.category-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+.category-item span {
+  font-size: 1.05rem;
+  color: #222;
+  font-weight: 500;
+  margin-top: 4px;
+}
+.category-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Gift Special Section */
+.gift-special {
+  width: 100%;
+  background: #f5f7fa;
+  border-radius: 8px;
+  margin: 32px 0 0 0;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gift-banner {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 1.1rem;
+}
+.gift-icon {
+  font-size: 2rem;
+  color: #ff9800;
+}
+.gift-text {
+  font-weight: 700;
+  color: #222;
+  font-size: 1.1rem;
+}
+.gift-desc {
+  color: #444;
+  font-size: 1rem;
+}
+.coupon {
+  color: #ff9800;
+  font-weight: 700;
+  background: #fff3e0;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+.gift-btn {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+}
+@media (max-width: 900px) {
+  .categories {
+    padding: 18px 8px 0 8px;
+  }
+  .categories-list {
+    gap: 18px;
+  }
+  .category-item {
+    width: 100px;
+    margin-bottom: 12px;
+  }
+}
