@@ -1,0 +1,69 @@
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+    padding: 0;
+    background: #fff;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  .container, .main-content, .section, .header, .footer {
+    width: 100% !important;
+    padding: 12px !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+  }
+  h1, h2, h3, h4, h5 {
+    font-size: 1.1em;
+    margin: 10px 0;
+    text-align: left;
+    word-break: break-word;
+  }
+  p, span, li, a {
+    font-size: 1em;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  button, input, select {
+    font-size: 1em;
+    width: 100%;
+    margin: 6px 0;
+    box-sizing: border-box;
+  }
+  .horizontal-list, .card-list, .deals-extra-images {
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    overflow-x: visible !important;
+  }
+  .card, .deal-card, .computer-card, .trending-card, .sports-item {
+    width: 100% !important;
+    margin: 0 0 16px 0 !important;
+    box-sizing: border-box;
+  }
+  .navbar, .nav-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    width: 100% !important;
+    padding: 8px 0 !important;
+  }
+  .nav-bar ul {
+    flex-direction: column !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .nav-bar li {
+    width: 100% !important;
+    padding: 12px 0 !important;
+    border-bottom: 1px solid #eee;
+  }
+  .banner, .computer-banner, .deals-extra-banner {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    border-radius: 10px !important;
+  }
+}
